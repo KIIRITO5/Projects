@@ -1,0 +1,51 @@
+/* Apply styles to the header */
+.header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+  #title {
+    font-size: 28px;
+    color: #333;
+  }
+  #description {
+    font-size: 16px;
+    color: #333;
+  }
+
+  /* Apply styles to the form elements */
+  .form {
+    margin-bottom: 20px;
+  }
+  label {
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  select {
+    height: 40px;
+  }
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+
+  /* Apply styles to the submit button */
+  #submit-button {
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #submit-button:hover {
+    background-color: #0056b3;
+  }
