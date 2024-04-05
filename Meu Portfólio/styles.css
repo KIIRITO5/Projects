@@ -1,0 +1,143 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #050522;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos da barra de navegação (navbar) */
+#navbar {
+    display: flex;
+    justify-content: right;
+    background-color: #050522;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 20px;
+    border-bottom: 1px solid #000000;
+}
+.nav-list {
+    display: flex;
+    list-style: none;
+    font-family: serif;
+}
+.nav-list a {
+    text-decoration: none;
+    color: #b0b0b0;
+    padding: 0 10px;
+}
+.nav-list a:hover {
+    text-decoration: underline;
+}
+
+section {
+    min-height: 100vh;
+    padding: 70px 0;
+}
+
+#welcome-section {
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+#welcome-section h1 {
+    margin-top: 30vh;
+}
+#welcome-section p {
+    color: #b0b0b0;
+    font-size: 18px;
+    margin: 10px 0;
+    font-style: italic;
+}
+#projects {
+    background-color: #000000;
+    color: #ffffff;
+}
+#projects h2 {
+    border-bottom: 5px solid #ffffff;
+    width: fit-content;
+    margin: auto;
+
+}
+#projects .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    place-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+#projects .project-tile {
+    height: 525px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 8px 8px 10px 5px rgba(100, 100, 100, 0.2);
+}
+#projects .project-tile img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#projects .project-tile p {
+    font-size: 25px;
+
+}
+#projects .project-tile span {
+    opacity: 0%;
+    padding: 0 5px;
+
+}
+#projects .project-tile:hover span {
+    opacity: 100%;
+    color:#ffffff;
+    transition: opacity 0.25s ease-in;
+    
+}
+.show-all {
+    text-decoration: none;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 0px 15px;
+    background-color: #b0b0b0;
+    color: #000000;
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+}
+.show-all:hover {
+    background-color: #b0b0b0;
+    color: #1818a9;
+}
+
+@media screen and (max-width: 768px) {
+    /* Estilos para dispositivos com largura de tela igual ou menor que 768px */
+    #welcome-section {
+        background-color: #050522; /* Altere a cor de fundo para azul */
+    }
+}
